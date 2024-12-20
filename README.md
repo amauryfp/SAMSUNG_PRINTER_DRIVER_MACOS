@@ -1,16 +1,18 @@
-# MacOs Driver for Samsung Printers
+# Samsung Printers Drivers for MacOs
 
 This repository contains Samsung printer drivers extracted from legacy MacOS driver support, ensuring compatibility with newer MacOS versions, including those running on M Series ARM-based processors. These drivers enable seamless functionality for Samsung printers on modern MacOS systems, preserving usability despite the discontinuation of official support.
 
 ## Driver Installation
 
-Repository clone:
+Open terminal and do the repository clone:
 
-    git clone https://github.com/amauryfp/samsung_printer_driver_macos.git
+    git clone https://github.com/amauryfp/SAMSUNG_PRINTER_DRIVER_MACOS.git
 
-Simply copy the content of the following repository folders using terminal as described below
+Navigate to repository folder:
 
-> Assuming you are with your terminal open and in the root folder of repository
+    cd SAMSUNG_PRINTER_DRIVER_MACOS/
+
+Simply copy the content of the following repository folders using terminal as described below:
 
     sudo cp -rfv Samsung /Library/Printers/ && sudo cp -rfv PPDs /Library/Printers/
     
@@ -18,6 +20,8 @@ Simply copy the content of the following repository folders using terminal as de
 
 With the drivers copied in the desired folder, simply follow the steps for adding your printer normally.
 
-## Final tweak
+## Final cleanup
 
 After installation you can simply delete this repository folder.
+
+    cd .. && sudo rm SAMSUNG_PRINTER_DRIVER_MACOS/
